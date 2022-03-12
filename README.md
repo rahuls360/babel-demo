@@ -11,6 +11,14 @@ Trying to better understand how to transpile/add polyfills for next generation j
 - babel.config.js -> babel config
 - rollup.config.js -> our bundler
 
+## Important pointers
+
+- Disabling caching in IE
+  - Internet options -> General -> Settings -> Every time I visit the webpage https://stackoverflow.com/a/21581823/6127580
+  - Network -> Always refresh from server https://stackoverflow.com/a/29146691/6127580
+- Ensure IE's versions is same as mentioned
+  - Terminal -> Emulation -> check if same mode as mentioned (otherwise may face issues with polyfills & browserslist, etc)
+
 ## Workflow to validate
 
 - `npm run dev` -> starts local server on port 3000
