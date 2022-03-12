@@ -11,3 +11,7 @@ const elvenGauntletsRecipe = {
   refinedMoonstone: 1,
 };
 console.log('ES7 Object spread example: ', elvenGauntletsRecipe);
+
+// ES8 Object.values example
+// Note: Will not transpile without babel/imported polyfills because it is a new method
+console.log('ES8 Object.values example', Object.values(elvenGauntletsRecipe));
